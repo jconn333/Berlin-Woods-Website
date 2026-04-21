@@ -15,212 +15,55 @@
   <meta name="twitter:description" content="Berlin Woods is one of nine unique Amish Country Lodging properties. Browse the full collection of treehouses, cabins, and cottages in Berlin, Ohio.">
   <meta name="twitter:image" content="https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=1200">
   <link rel="stylesheet" href="assets/site.css">
-  <style>
-    .collection-intro-wrap {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 2.2rem;
-    }
-    .collection-intro-wrap .section-intro {
-      max-width: none;
-      margin-bottom: 0;
-    }
-    .collection-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.8rem;
-    }
-    .collection-stat {
-      background: rgba(255, 250, 240, 0.96);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-md);
-      box-shadow: 0 8px 24px rgba(39,27,15,0.07);
-      padding: 1.1rem 1rem;
-      text-align: center;
-    }
-    .collection-stat__number {
-      display: block;
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      color: var(--accent-dark);
-      line-height: 1;
-      margin-bottom: 0.35rem;
-    }
-    .collection-stat__label {
-      display: block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .property-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.35rem;
-      margin-bottom: 2.5rem;
-    }
-    .property-card {
-      background: rgba(255, 250, 240, 0.94);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .property-card__image {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-    .property-card__placeholder {
-      width: 100%;
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, rgba(48,75,52,0.85), rgba(85,49,27,0.9));
-      color: rgba(255,250,240,0.96);
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      text-align: center;
-      padding: 1rem;
-      letter-spacing: 0.02em;
-    }
-    .property-card__body {
-      padding: 1.4rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      flex: 1;
-    }
-    .property-card.is-current {
-      border-color: var(--accent-soft);
-    }
-    .property-card.is-current .property-card__body {
-      background: linear-gradient(135deg, rgba(48,75,52,0.06), rgba(255,250,240,0.98));
-    }
-    .property-card__badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-dark);
-      margin-bottom: 0.2rem;
-    }
-    .property-card h3 {
-      font-size: clamp(1.1rem, 1.5vw, 1.35rem);
-      margin-bottom: 0.1rem;
-    }
-    .property-card__type {
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-    }
-    .property-card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 0.3rem 0 0.6rem;
-      flex: 1;
-    }
-    .property-card__pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.8rem;
-    }
-    .property-card__pill {
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 0.3rem 0.65rem;
-      border-radius: 999px;
-      background: rgba(48,75,52,0.08);
-      border: 1px solid rgba(48,75,52,0.12);
-      color: var(--pine);
-    }
-    .collection-cta {
-      text-align: center;
-      padding: 2.5rem;
-      background: linear-gradient(135deg, rgba(48,75,52,0.08), rgba(255,250,240,0.96));
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
-    }
-    .collection-cta h2 {
-      font-size: clamp(1.4rem, 2.5vw, 2rem);
-      margin-bottom: 0.7rem;
-    }
-    .collection-cta p {
-      color: var(--muted);
-      max-width: 48ch;
-      margin: 0 auto 1.5rem;
-    }
-    @media (max-width: 1024px) {
-      .property-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .collection-intro-wrap { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 720px) {
-      .property-grid { grid-template-columns: 1fr; }
-      .collection-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
-      .collection-stat { padding: 0.9rem 0.5rem; }
-    }
-  </style>
 </head>
 <body class="page-shell" data-page="collection.html">
   <div data-header></div>
 
   <main id="main">
     <section class="page-hero">
-      <div class="page-hero-card">
-        <div class="eyebrow">Explore the Collection</div>
-        <h1>More ways to stay in Amish Country</h1>
-        <p class="lead">Berlin Woods is one of nine unique properties operated by Amish Country Lodging in Berlin, Ohio. Whether you're looking for a secluded cabin, a downtown cottage, or another treehouse, there's a stay for every kind of trip.</p>
+      <div class="page-hero-bg">
+        <img src="https://www.amishcountrylodging.com/wp-content/uploads/2022/05/treehouse-slide.jpg" alt="Treehouse in Amish Country Ohio">
+      </div>
+      <div class="page-hero-content">
+        <span class="eyebrow">The Collection</span>
+        <h1>More ways to stay</h1>
+        <p class="lead">Berlin Woods is one of nine unique properties operated by Amish Country Lodging in Berlin, Ohio.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="section-inner">
 
-        <div class="collection-intro-wrap">
-          <div class="section-intro">
-            <div class="eyebrow">Amish Country Lodging Properties</div>
-            <h2>Nine properties. One corner of Ohio worth exploring.</h2>
-            <p class="lead">Each property has its own setting, style, and personality — all with the same commitment to a comfortable, memorable stay.</p>
+        <div class="section-intro section-intro--centered reveal">
+          <span class="eyebrow">Amish Country Lodging</span>
+          <h2>Nine properties. One corner of Ohio.</h2>
+          <p class="lead">Each property has its own setting, style, and personality — all with the same commitment to a comfortable, memorable stay.</p>
+        </div>
+
+        <div class="collection-stats reveal">
+          <div class="collection-stat">
+            <span class="collection-stat__number">9</span>
+            <span class="collection-stat__label">Properties</span>
           </div>
-          <div class="collection-stats">
-            <div class="collection-stat">
-              <span class="collection-stat__number">9</span>
-              <span class="collection-stat__label">Properties</span>
-            </div>
-            <div class="collection-stat">
-              <span class="collection-stat__number">75</span>
-              <span class="collection-stat__label">Unique Units</span>
-            </div>
-            <div class="collection-stat">
-              <span class="collection-stat__number">2&ndash;10</span>
-              <span class="collection-stat__label">Guests Per Stay</span>
-            </div>
+          <div class="collection-stat">
+            <span class="collection-stat__number">75</span>
+            <span class="collection-stat__label">Unique Units</span>
+          </div>
+          <div class="collection-stat">
+            <span class="collection-stat__number">2&ndash;10</span>
+            <span class="collection-stat__label">Guests Per Stay</span>
           </div>
         </div>
 
         <div class="property-grid">
 
-          <article class="property-card is-current">
+          <article class="property-card is-current reveal">
             <img class="property-card__image" src="https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=800" alt="Berlin Woods treehouse">
             <div class="property-card__body">
               <div class="property-card__badge">&#9733; You are here</div>
               <div class="property-card__type">Treehouses</div>
               <h3>Berlin Woods</h3>
-              <p>Elevated treehouses 30–40 feet off the ground, tucked into the woods less than a mile from downtown Berlin. Treehouses for couples, families, and the Skyview A-Frame for groups.</p>
+              <p>Elevated treehouses 30–40 feet off the ground, tucked into the woods less than a mile from downtown Berlin.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Hot tubs</span>
                 <span class="property-card__pill">Fireplaces</span>
@@ -230,12 +73,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Pine Cove Lodging</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2019/08/wild-cherry-interior-slide.jpg" alt="Pine Cove Lodging interior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Farmhouse Suites &amp; Cabins</div>
               <h3>Pine Cove Lodging</h3>
-              <p>Seven wooded acres designed for couples, with farmhouse suites, an evergreen cabin, and treehouse cabins — all just a mile from downtown Berlin.</p>
+              <p>Seven wooded acres designed for couples, with farmhouse suites, an evergreen cabin, and treehouse cabins.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Jetted tubs</span>
                 <span class="property-card__pill">Fireplaces</span>
@@ -245,12 +88,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Coblentz Country Cabins</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2019/08/red-fern-exterior-slide.jpg" alt="Coblentz Country Cabins exterior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Lodge &amp; Private Cabins</div>
               <h3>Coblentz Country Cabins</h3>
-              <p>Lodge rooms and private cabins on a hillside overlooking a pond, less than a quarter mile from downtown. A strong pick for families, couples, and group getaways.</p>
+              <p>Lodge rooms and private cabins on a hillside overlooking a pond, less than a quarter mile from downtown.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Jetted tubs</span>
                 <span class="property-card__pill">Full kitchens</span>
@@ -260,12 +103,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Blessings Lodge</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2020/02/barnwood-living-room-slide.jpg" alt="Blessings Lodge living room" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Private Lodge Suites</div>
               <h3>Blessings Lodge</h3>
-              <p>Private suites with pond views, gas fireplaces, and full kitchens, set less than a quarter mile from downtown Berlin. Relaxed, comfortable, and easy to settle into.</p>
+              <p>Private suites with pond views, gas fireplaces, and full kitchens, less than a quarter mile from downtown Berlin.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Gas fireplaces</span>
                 <span class="property-card__pill">Pond views</span>
@@ -275,12 +118,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Berlin Cottages</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2019/07/village-dreams-queens-slide.jpg" alt="Berlin Cottages interior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">In-Town Cottages</div>
               <h3>Berlin Cottages</h3>
-              <p>Two-bedroom, two-bath cottages right on Main Street in downtown Berlin. Cedar saunas, jetted tubs, fireplaces, and pool tables — steps from the shops and restaurants.</p>
+              <p>Two-bedroom cottages right on Main Street in downtown Berlin. Cedar saunas, jetted tubs, fireplaces, and pool tables.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Cedar sauna</span>
                 <span class="property-card__pill">Downtown</span>
@@ -290,12 +133,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Cricket Hill Cabins</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2023/12/Cricket-Treehouse-B-Exterior-Web.jpg" alt="Cricket Hill Cabins treehouse exterior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Secluded Cabins</div>
               <h3>Cricket Hill Cabins</h3>
-              <p>The most secluded property in the collection — wooded, private, and designed for couples and friends who want to fully disconnect. Stone fireplaces, hot tubs, and fire rings.</p>
+              <p>The most secluded property in the collection — wooded, private, and designed for couples who want to fully disconnect.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Hot tubs</span>
                 <span class="property-card__pill">Stone fireplaces</span>
@@ -305,12 +148,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Premier Cottages</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2023/05/premier-cottage-10-interior.jpg" alt="Premier Cottages interior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Cottages</div>
               <h3>Premier Cottages</h3>
-              <p>Comfortable cottages in Millersburg, Ohio — a relaxed option for guests looking for a well-appointed stay in the heart of Amish Country.</p>
+              <p>Comfortable cottages in Millersburg — a relaxed option for a well-appointed stay in Amish Country.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Millersburg</span>
                 <span class="property-card__pill">Amish Country</span>
@@ -319,12 +162,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Ferngully Creek</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2024/10/Ferngully-Creek-Woods.jpeg" alt="Ferngully Creek wooded setting" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Creek Cabins</div>
               <h3>Ferngully Creek</h3>
-              <p>Wooded cabin stays along a creek setting in Millersburg — a natural, peaceful escape with the sounds of the outdoors right outside your door.</p>
+              <p>Wooded cabin stays along a creek in Millersburg — a natural, peaceful escape with the sounds of the outdoors.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Creek setting</span>
                 <span class="property-card__pill">Wooded</span>
@@ -333,12 +176,12 @@
             </div>
           </article>
 
-          <article class="property-card">
-            <div class="property-card__placeholder">Berlin Tiny Stays</div>
+          <article class="property-card reveal">
+            <img class="property-card__image" src="https://www.amishcountrylodging.com/wp-content/uploads/2024/10/66a5329607df3f51995e7bac_Photo-Jun-28-6-58-49-PM.jpg_1600.jpg" alt="Berlin Tiny Stays exterior" loading="lazy">
             <div class="property-card__body">
               <div class="property-card__type">Tiny Houses</div>
               <h3>Berlin Tiny Stays</h3>
-              <p>Thoughtfully designed tiny house stays along Route 39 in Millersburg — a modern, minimalist option for guests who prefer a compact, intentional space.</p>
+              <p>Thoughtfully designed tiny house stays along Route 39 — modern, minimalist, and intentional.</p>
               <div class="property-card__pills">
                 <span class="property-card__pill">Tiny houses</span>
                 <span class="property-card__pill">Route 39</span>
@@ -349,13 +192,18 @@
 
         </div>
 
-        <div class="collection-cta">
-          <div class="eyebrow">Browse Everything</div>
-          <h2>Not sure which property is right for your trip?</h2>
-          <p>Amish Country Lodging lets you search all 75 units across every property in one place — filter by guests, dates, and amenities to find your perfect stay.</p>
-          <a class="button" href="https://www.amishcountrylodging.com" target="_blank" rel="noreferrer">Browse All Properties</a>
-        </div>
+      </div>
+    </section>
 
+    <section class="cta-band">
+      <div class="cta-band-bg">
+        <img src="https://www.amishcountrylodging.com/wp-content/uploads/2022/05/Large-Treehouse-Banner-Interior.jpg" alt="Skyview treehouse interior">
+      </div>
+      <div class="cta-band-content">
+        <span class="eyebrow">Browse Everything</span>
+        <h2>Not sure which property is right?</h2>
+        <p>Search all 75 units across every property — filter by guests, dates, and amenities.</p>
+        <a class="button" href="https://www.amishcountrylodging.com" target="_blank" rel="noreferrer">Browse All Properties</a>
       </div>
     </section>
   </main>

@@ -1,48 +1,78 @@
 const heroImages = {
-  main: "https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=1200",
-  secondary: "https://bookingenginecdn.hostaway.com/listing/58297-214157-l8SiBoQIND--w2IK16zYGWrOZ5oalse--sWXvPnM1oQCY-655b74eeb0934?format=webp&quality=70&v=2&width=1200"
+  main: "https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=2000",
+  secondary: "https://bookingenginecdn.hostaway.com/listing/58297-214157-l8SiBoQIND--w2IK16zYGWrOZ5oalse--sWXvPnM1oQCY-655b74eeb0934?format=webp&quality=70&v=2&width=2000"
+};
+
+const pageHeroImages = {
+  "treehouses.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/tree-house-5-exterior-slide.jpg",
+  "gallery.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-exterior-overview.jpg",
+  "location.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/tree-house-5-deck-w-view.jpg",
+  "attractions.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/horse-and-green-buggy.jpg",
+  "collection.html": "https://www.amishcountrylodging.com/wp-content/uploads/2022/05/treehouse-slide.jpg",
+  "faq.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-1-living-room.jpg",
+  "contact.html": "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-exterior-overview.jpg"
 };
 
 const galleryItems = [
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=1200",
-    title: "Arrival through the trees",
-    copy: "Walkways bring you in at tree level, setting the tone before you even unlock the door."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/tree-house-5-exterior-slide.jpg",
+    title: "Elevated among the canopy",
+    copy: "Each treehouse rises 30 feet above the forest floor, surrounded by mature hardwoods."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214157-l8SiBoQIND--w2IK16zYGWrOZ5oalse--sWXvPnM1oQCY-655b74eeb0934?format=webp&quality=70&v=2&width=1200",
-    title: "Private wooded setting",
-    copy: "Each stay is tucked into its own pocket of the property, quiet, wooded, and set apart."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-1-living-room.jpg",
+    title: "Warm interiors, tall windows",
+    copy: "Floor-to-ceiling windows bring the forest inside alongside gas fireplaces and warm wood finishes."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214173-4HG3uwv6a4aLj9zPytHKHU--1hf5ea-LNi3YoI7sRa98-655b664331e70?format=webp&quality=70&v=2&width=1200",
-    title: "Room for longer stays",
-    copy: "The larger stays give families and small groups more room to settle in and stay awhile."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2022/05/hot-tub-treehouse-small.jpg",
+    title: "Private outdoor hot tubs",
+    copy: "Select stays include covered hot tubs on the deck — soak under the stars with nothing but trees around you."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214172-X5BnTVsvRwu8BHzB0v1LS7wBg7pZq8vlqxhfPTFUxOM-655b65ebe0ef2?format=webp&quality=70&v=2&width=1200",
-    title: "Skyview treehouse stay",
-    copy: "Skyview treehouses open up to longer views across the tree line and a different feel on the property."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-jetted-tub.jpg",
+    title: "Stone-wrapped jetted tubs",
+    copy: "Hand-finished stone surrounds two-person jetted tubs in several of the larger stays."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214166-1sAgDD4eSk3t71m---Ta-YFOO-OXYu9qUjpJXOEjL9lA-655b64b730d9f?format=webp&quality=70&v=2&width=1200",
-    title: "Skyview Treehouse A",
-    copy: "The Skyview treehouses sit higher up and open to longer views across the tree line — a different feel than the standard treehouses below."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2022/11/A-frame-hero.jpg",
+    title: "The Skyview A-Frame",
+    copy: "Our largest stay sleeps 10, with panoramic views and an 8-person outdoor hot tub."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214159-kp-z3NB0Vi3u2n-XIF7uNHvK9KbMw6--iZlhu6IRX66g-655b8f922abcc?format=webp&quality=70&v=2&width=1200",
-    title: "Closer exterior detail",
-    copy: "Warm cedar exteriors, wide decks, and thoughtful details give the property its signature look."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/tree-house-5-deck-w-view.jpg",
+    title: "Decks with forest views",
+    copy: "Rocking chairs and open-air decks look out over the wooded hillside."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214150-Pj3zmw78-7bYCbUFt-T2JISd249rG8Kx2kkxK0jJ2oM-655b614f7639c?format=webp&quality=70&v=2&width=1200",
-    title: "Thoughtful interiors throughout",
-    copy: "Full kitchens, warm wood finishes, and comfortable spaces make each stay feel as good inside as the view looks outside."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-1-kitchen.jpg",
+    title: "Fully equipped kitchens",
+    copy: "Cook at your own pace with full-size appliances and everything you need."
   },
   {
-    image: "https://bookingenginecdn.hostaway.com/listing/58297-214172---gS3DppbQZQruB0r4svdcinV4i95N1SsX--fYOubeVCo-655b65eeaac46?format=webp&quality=70&v=2&width=1200",
-    title: "Premium outdoor atmosphere",
-    copy: "Covered porches, wooded views, and hot tubs on select stays help guests slow down once they arrive."
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-fireplace.jpg",
+    title: "Fireside evenings",
+    copy: "Gas fireplaces in every stay — the perfect end to a day in Amish Country."
+  },
+  {
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2022/05/Skyview-Hot-Tub.jpg",
+    title: "Skyview hot tub patio",
+    copy: "The Skyview units feature spacious outdoor patios with private hot tubs."
+  },
+  {
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-king-bed.jpg",
+    title: "Restful king beds",
+    copy: "Premium bedding and quiet forest surroundings make for the deepest sleep."
+  },
+  {
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2022/11/a-frame-patio.jpg",
+    title: "Fire pit under the stars",
+    copy: "Gather around the fire pit at the A-Frame as evening settles over the property."
+  },
+  {
+    image: "https://www.amishcountrylodging.com/wp-content/uploads/2019/08/treehouse-3-lower-deck.jpg",
+    title: "Multi-level living",
+    copy: "The larger treehouses spread across three stories with decks on every level."
   }
 ];
 
@@ -99,24 +129,17 @@ const faqs = [
 
 const featuredUnitNames = [
   "Skyview A-Frame",
-  "Treehouse #0",
   "Treehouse #1",
-  "Treehouse #2",
-  "Treehouse #3",
-  "Treehouse #4",
-  "Treehouse #5",
-  "Treehouse #6",
-  "Treehouse #7",
-  "Treehouse #8",
   "Skyview Treehouse A",
-  "Skyview Treehouse B",
-  "Skyview Treehouse D"
+  "Treehouse #0",
+  "Treehouse #7",
+  "Treehouse #3"
 ];
 
 const units = [
   {
     name: "Treehouse #0",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Romantic treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and private hot tub.",
@@ -126,9 +149,9 @@ const units = [
   },
   {
     name: "Treehouse #1",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
-    type: "Family-friendly treehouse",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
+    type: "Family treehouse",
     highlight: "A 3-story treehouse that sleeps up to 6 with two king beds, two twin beds, and two full bathrooms.",
     amenities: ["2 king beds, 2 twin beds", "Full kitchen", "2 full bathrooms", "30' up, 3-stories", "Fireplace", "Smart TV"],
     bookingUrl: "https://book.amishcountrylodging.com/listings/214149",
@@ -136,9 +159,9 @@ const units = [
   },
   {
     name: "Treehouse #2",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
-    type: "Family-friendly treehouse",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
+    type: "Family treehouse",
     highlight: "A 3-story treehouse that sleeps up to 6 with two king beds, two twin beds, and two full bathrooms.",
     amenities: ["2 king beds, 2 twin beds", "Full kitchen", "2 full bathrooms", "30' up, 3-stories", "Fireplace", "Smart TV"],
     bookingUrl: "https://book.amishcountrylodging.com/listings/214150",
@@ -146,9 +169,9 @@ const units = [
   },
   {
     name: "Treehouse #3",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
-    type: "Family-friendly treehouse",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
+    type: "Family treehouse",
     highlight: "A larger treehouse that sleeps up to 6 with 3 bedrooms, 2 bathrooms, and a full kitchen.",
     amenities: ["3 bedrooms", "2 bathrooms", "Full kitchen", "Fireplace", "Smart TV", "Sleeps 6"],
     bookingUrl: "https://book.amishcountrylodging.com/listings/214151",
@@ -156,7 +179,7 @@ const units = [
   },
   {
     name: "Treehouse #4",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Couples treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and one bathroom.",
@@ -166,7 +189,7 @@ const units = [
   },
   {
     name: "Treehouse #5",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Couples treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and one bathroom.",
@@ -176,7 +199,7 @@ const units = [
   },
   {
     name: "Treehouse #6",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Luxury treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and one bathroom.",
@@ -186,7 +209,7 @@ const units = [
   },
   {
     name: "Treehouse #7",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Hot tub treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and private hot tub.",
@@ -196,7 +219,7 @@ const units = [
   },
   {
     name: "Treehouse #8",
-    guests: "Up to 2 guests",
+    guests: "2 guests",
     beds: "1 king bed",
     type: "Hot tub treehouse",
     highlight: "A single-level treehouse for two with a king bed, full kitchen, and private hot tub.",
@@ -206,8 +229,8 @@ const units = [
   },
   {
     name: "Skyview Treehouse A",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
     type: "Skyview treehouse",
     highlight: "A 3-story Skyview treehouse that sleeps up to 6 with two king beds, two twin beds, and a hot tub.",
     amenities: ["Hot tub", "Full kitchen", "Fireplace", "Jacuzzi", "2 king beds, 2 twin beds", "2 bathrooms"],
@@ -216,8 +239,8 @@ const units = [
   },
   {
     name: "Skyview Treehouse B",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
     type: "Skyview treehouse",
     highlight: "A 3-story Skyview treehouse that sleeps up to 6 with two king beds, two twin beds, and a hot tub.",
     amenities: ["Hot tub", "Full kitchen", "Fireplace", "Jacuzzi", "2 king beds, 2 twin beds", "2 bathrooms"],
@@ -226,8 +249,8 @@ const units = [
   },
   {
     name: "Skyview Treehouse D",
-    guests: "Up to 6 guests",
-    beds: "2 king beds, 2 twin beds",
+    guests: "Up to 6",
+    beds: "2 king + 2 twin",
     type: "Skyview treehouse",
     highlight: "A 3-story Skyview treehouse that sleeps up to 6 with two king beds, two twin beds, and a hot tub.",
     amenities: ["Hot tub", "Full kitchen", "Fireplace", "Jacuzzi", "2 king beds, 2 twin beds", "2 bathrooms"],
@@ -236,8 +259,8 @@ const units = [
   },
   {
     name: "Skyview A-Frame",
-    guests: "Up to 10 guests",
-    beds: "3 king beds, 4 twin bunk beds",
+    guests: "Up to 10",
+    beds: "3 king + 4 bunk",
     type: "A-frame cabin",
     highlight: "The largest stay at Berlin Woods, sleeping up to 10 with panoramic views and an 8-person outdoor hot tub.",
     amenities: ["Sleeps 10", "8-person hot tub", "Full kitchen", "Fireplace", "3 king beds, 4 twin bunks", "2 bathrooms"],

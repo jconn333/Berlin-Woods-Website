@@ -15,171 +15,47 @@
   <meta name="twitter:description" content="Explore the best of Amish Country from Berlin Woods — dining, shopping, entertainment, and outdoor activities all within minutes.">
   <meta name="twitter:image" content="https://bookingenginecdn.hostaway.com/listing/58297-214149-UluOzaL2WTUaTn1i8s2cJS0HOfaNZdm--T22bPF2asf4-6685fcf89f68f?format=webp&quality=70&v=2&width=1200">
   <link rel="stylesheet" href="assets/site.css">
-  <style>
-    .attractions-intro-wrap {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 2.5rem;
-    }
-    .attractions-intro-wrap .section-intro {
-      max-width: none;
-      margin-bottom: 0;
-    }
-    .attractions-intro-image {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
-    }
-    @media (max-width: 900px) {
-      .attractions-intro-wrap { grid-template-columns: 1fr; }
-      .attractions-intro-image { height: 220px; }
-    }
-    .attraction-category {
-      margin-bottom: 3rem;
-    }
-    .attraction-category__header {
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid var(--line);
-    }
-    .attraction-category__eyebrow {
-      display: block;
-      color: var(--pine);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 0.35rem;
-    }
-    .attraction-category__title {
-      font-family: var(--font-display);
-      font-size: clamp(1.4rem, 2.2vw, 1.9rem);
-      color: var(--ink);
-      margin: 0;
-    }
-    .attraction-card h3 a {
-      color: var(--ink);
-      border-bottom: 1px solid transparent;
-      transition: border-color 180ms ease, color 180ms ease;
-    }
-    .attraction-card h3 a:hover {
-      color: var(--accent-dark);
-      border-bottom-color: var(--accent-soft);
-    }
-    .attraction-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-    .attraction-card {
-      background: rgba(255, 250, 240, 0.94);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-md);
-      box-shadow: 0 8px 24px rgba(39,27,15,0.07);
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-    .attraction-card.is-ours {
-      border-color: var(--accent-soft);
-      background: linear-gradient(135deg, rgba(48,75,52,0.06), rgba(255,250,240,0.98));
-    }
-    .attraction-card__badge {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-dark);
-      margin-bottom: 0.1rem;
-    }
-    .attraction-card h3 {
-      font-size: 1.05rem;
-      line-height: 1.2;
-      margin-bottom: 0.1rem;
-    }
-    .attraction-card p {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin: 0;
-      flex: 1;
-    }
-    .attraction-card__distance {
-      font-size: 0.8rem;
-      color: var(--pine);
-      font-weight: 700;
-      margin-top: 0.5rem;
-    }
-    .attractions-cta {
-      text-align: center;
-      padding: 2.5rem;
-      background: linear-gradient(135deg, rgba(48,75,52,0.08), rgba(255,250,240,0.96));
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
-      margin-top: 1rem;
-    }
-    .attractions-cta h2 {
-      font-size: clamp(1.4rem, 2.5vw, 2rem);
-      margin-bottom: 0.7rem;
-    }
-    .attractions-cta p {
-      color: var(--muted);
-      max-width: 48ch;
-      margin: 0 auto 1.5rem;
-    }
-    .cta-buttons {
-      display: flex;
-      gap: 0.9rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    @media (max-width: 1024px) {
-      .attraction-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 720px) {
-      .attraction-grid { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body class="page-shell" data-page="attractions.html">
   <div data-header></div>
 
   <main id="main">
     <section class="page-hero">
-      <div class="page-hero-card">
-        <div class="eyebrow">Local Attractions</div>
-        <h1>Everything Amish Country has to offer</h1>
-        <p class="lead">Berlin Woods puts you in the middle of one of Ohio's most visited destinations. Shops, bakeries, live entertainment, and open countryside are all within a few minutes of your stay.</p>
+      <div class="page-hero-bg">
+        <img src="https://www.amishcountrylodging.com/wp-content/uploads/2019/08/horse-and-green-buggy.jpg" alt="Horse-drawn buggy on an Amish Country road">
+      </div>
+      <div class="page-hero-content">
+        <span class="eyebrow">Local Attractions</span>
+        <h1>Explore Amish Country</h1>
+        <p class="lead">Shops, bakeries, live entertainment, and open countryside — all within minutes of your stay.</p>
+      </div>
+    </section>
+
+    <!-- INTRO SPLIT -->
+    <section class="split-section reverse">
+      <div class="split-img">
+        <img src="https://www.amishcountrylodging.com/wp-content/uploads/2019/08/amish-quilts-at-barn.jpg" alt="Amish quilts displayed at a barn">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">Near Berlin, Ohio</span>
+        <h2>A full day out, then back to the quiet</h2>
+        <p>Berlin is a small town with an outsized amount to do. Most guests spend their days exploring and their evenings unwinding back at the property — the best of both worlds.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="section-inner">
 
-        <div class="attractions-intro-wrap">
-          <div class="section-intro">
-            <div class="eyebrow">Near Berlin, Ohio</div>
-            <h2>A full day out, then back to the quiet</h2>
-            <p class="lead">Berlin is a small town with an outsized amount to do. Most guests spend their days exploring Amish Country and their evenings unwinding back at the property — the best of both worlds in one short drive.</p>
-          </div>
-          <img class="attractions-intro-image" src="https://bookingenginecdn.hostaway.com/listing/58297-214157-l8SiBoQIND--w2IK16zYGWrOZ5oalse--sWXvPnM1oQCY-655b74eeb0934?format=webp&quality=70&v=2&width=1200" alt="Berlin Woods treehouse walkway through the trees">
-        </div>
-
-        <!-- ENTERTAINMENT -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Entertainment</span>
             <h2 class="attraction-category__title">Live shows, culture, and classic Amish Country experiences</h2>
           </div>
           <div class="attraction-grid">
             <article class="attraction-card is-ours">
+              <div class="attraction-card__badge">Our Property</div>
               <h3><a href="https://amishcountrytheater.com" target="_blank" rel="noopener">Amish Country Theater</a></h3>
-              <p>A 600-seat family variety show featuring comedians, ventriloquists, and the Amish comedy trio The Beachy's. Voted a Top 100 Event in North America. Located inside the Berlin Encore Hotel lobby.</p>
+              <p>A 600-seat family variety show featuring comedians, ventriloquists, and the Amish comedy trio The Beachy's. Voted a Top 100 Event in North America.</p>
               <div class="attraction-card__distance">Downtown Berlin &middot; amishcountrytheater.com</div>
             </article>
             <article class="attraction-card">
@@ -189,14 +65,13 @@
             </article>
             <article class="attraction-card">
               <h3>Horse-Drawn Buggy Rides</h3>
-              <p>Take a guided buggy ride through the Amish countryside and learn about the culture from local guides. A memorable experience for all ages and a genuine glimpse into daily Amish life.</p>
+              <p>Take a guided buggy ride through the Amish countryside and learn about the culture from local guides. A memorable experience for all ages.</p>
               <div class="attraction-card__distance">Available locally in Berlin area</div>
             </article>
           </div>
         </div>
 
-        <!-- DINING -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Dining</span>
             <h2 class="attraction-category__title">Family-style meals, homemade pies, and local favorites</h2>
@@ -209,7 +84,7 @@
             </article>
             <article class="attraction-card">
               <h3><a href="https://www.dhgroup.com/berlin-farmstead" target="_blank" rel="noopener">Berlin Farmstead Restaurant</a></h3>
-              <p>Family-style Amish cooking with hearty portions, fried chicken, and homemade sides. A favorite for groups and families looking for an authentic local meal.</p>
+              <p>Family-style Amish cooking with hearty portions, fried chicken, and homemade sides. A favorite for groups and families.</p>
               <div class="attraction-card__distance">Berlin &middot; Less than 1 mile</div>
             </article>
             <article class="attraction-card">
@@ -220,8 +95,7 @@
           </div>
         </div>
 
-        <!-- SHOPPING -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Shopping</span>
             <h2 class="attraction-category__title">Amish-made goods, specialty shops, and small-batch favorites</h2>
@@ -229,24 +103,23 @@
           <div class="attraction-grid">
             <article class="attraction-card">
               <h3><a href="https://www.heinis.com" target="_blank" rel="noopener">Heini's Cheese Chalet</a></h3>
-              <p>One of Ohio's most visited cheese shops, with over 50 varieties made on-site. Free samples, a viewing window into the production floor, and a great selection of local goods.</p>
+              <p>One of Ohio's most visited cheese shops, with over 50 varieties made on-site. Free samples and a viewing window into the production floor.</p>
               <div class="attraction-card__distance">Berlin &middot; About 2 minutes away</div>
             </article>
             <article class="attraction-card">
               <h3><a href="https://yodersamishhome.com" target="_blank" rel="noopener">Yoder's Amish Home</a></h3>
-              <p>A working Amish farm with guided tours, a gift shop, and genuine insight into Amish daily life. A popular stop for first-time visitors to Holmes County.</p>
+              <p>A working Amish farm with guided tours, a gift shop, and genuine insight into Amish daily life.</p>
               <div class="attraction-card__distance">Millersburg &middot; About 10 minutes away</div>
             </article>
             <article class="attraction-card">
               <h3>Downtown Berlin Shops</h3>
-              <p>Berlin's main street is lined with Amish-made furniture, handmade quilts, candles, fudge, and specialty shops. Plan to spend at least a half day browsing.</p>
+              <p>Amish-made furniture, handmade quilts, candles, fudge, and specialty shops. Plan at least a half day.</p>
               <div class="attraction-card__distance">Downtown Berlin &middot; Less than 1 mile</div>
             </article>
           </div>
         </div>
 
-        <!-- OUTDOOR -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Outdoor Activities</span>
             <h2 class="attraction-category__title">Trails, countryside views, and time outside</h2>
@@ -254,67 +127,73 @@
           <div class="attraction-grid">
             <article class="attraction-card">
               <h3><a href="https://www.visitamishcountry.com/activities/holmes-county-trail" target="_blank" rel="noopener">Holmes County Trail</a></h3>
-              <p>A paved multi-use trail running through the heart of Holmes County — a peaceful way to explore the countryside by bike or on foot, passing through Amish farmland and small towns.</p>
+              <p>A paved multi-use trail through the heart of Holmes County — peaceful by bike or on foot, passing through Amish farmland and small towns.</p>
               <div class="attraction-card__distance">Accessible from Berlin area</div>
             </article>
             <article class="attraction-card">
               <h3>Killbuck Marsh Wildlife Area</h3>
-              <p>One of Ohio's largest inland marshes and a prime spot for birdwatching, especially during spring and fall migration. Canoe access and walking trails available.</p>
+              <p>One of Ohio's largest inland marshes and a prime spot for birdwatching. Canoe access and walking trails available.</p>
               <div class="attraction-card__distance">About 15 minutes away</div>
             </article>
             <article class="attraction-card">
               <h3>Scenic Countryside Drives</h3>
-              <p>Holmes County's back roads wind through working Amish farms, rolling hills, and one-room schoolhouses. Roll the windows down and take your time — there's no better way to take it all in.</p>
+              <p>Holmes County's back roads wind through working Amish farms, rolling hills, and one-room schoolhouses. Roll the windows down and take your time.</p>
               <div class="attraction-card__distance">Starts right outside your door</div>
             </article>
           </div>
         </div>
 
-        <!-- HEALTH & FITNESS -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Health &amp; Fitness</span>
             <h2 class="attraction-category__title">Stay active during your stay</h2>
           </div>
           <div class="attraction-grid">
             <article class="attraction-card is-ours">
+              <div class="attraction-card__badge">Our Property</div>
               <h3><a href="https://www.berlinohiofitness.com" target="_blank" rel="noopener">The Club at Berlin Resort</a></h3>
-              <p>A full-service health and fitness center located at the Berlin Resort. Gym facilities, pool, and wellness amenities available to guests looking to stay active during their Amish Country visit.</p>
+              <p>A full-service health and fitness center. Gym facilities, pool, and wellness amenities for guests looking to stay active.</p>
               <div class="attraction-card__distance">Berlin &middot; berlinohiofitness.com</div>
             </article>
           </div>
         </div>
 
-        <!-- HOTELS -->
-        <div class="attraction-category">
+        <div class="attraction-category reveal">
           <div class="attraction-category__header">
             <span class="attraction-category__eyebrow">Traveling With A Larger Group?</span>
             <h2 class="attraction-category__title">Hotel options from our family of businesses</h2>
           </div>
           <div class="attraction-grid">
             <article class="attraction-card is-ours">
+              <div class="attraction-card__badge">Our Property</div>
               <h3><a href="https://berlinencorehotel.com" target="_blank" rel="noopener">Berlin Encore Hotel</a></h3>
-              <p>A full-service hotel in downtown Berlin with direct access to the Amish Country Theater. A strong option for guests traveling with a larger group who need a mix of hotel rooms and cabin-style stays.</p>
+              <p>A full-service hotel in downtown Berlin with direct access to the Amish Country Theater. Great for larger groups needing a mix of hotel rooms and cabin-style stays.</p>
               <div class="attraction-card__distance">Downtown Berlin &middot; berlinencorehotel.com</div>
             </article>
             <article class="attraction-card is-ours">
+              <div class="attraction-card__badge">Our Property</div>
               <h3><a href="https://berlinresort.com" target="_blank" rel="noopener">Berlin Resort</a></h3>
-              <p>A resort-style property with hotel accommodations, recreational amenities, and The Club fitness center. Great for larger groups or guests who want a more resort-oriented experience in Amish Country.</p>
+              <p>Resort-style property with hotel accommodations, recreational amenities, and The Club fitness center.</p>
               <div class="attraction-card__distance">Berlin &middot; berlinresort.com</div>
             </article>
           </div>
         </div>
 
-        <div class="attractions-cta">
-          <div class="eyebrow">Ready to Plan Your Stay?</div>
-          <h2>Berlin Woods is your home base for all of it</h2>
-          <p>Less than a mile from downtown Berlin — close enough to explore, quiet enough to recharge.</p>
-          <div class="cta-buttons">
-            <a class="button" href="https://book.amishcountrylodging.com" target="_blank" rel="noreferrer">Book Your Stay</a>
-            <a class="button-secondary" href="treehouses.html">Browse Stays</a>
-          </div>
-        </div>
+      </div>
+    </section>
 
+    <section class="cta-band">
+      <div class="cta-band-bg">
+        <img src="https://www.amishcountrylodging.com/wp-content/uploads/2019/08/tree-house-6-porch-vert-900x1200.jpg" alt="Treehouse porch with rocking chairs">
+      </div>
+      <div class="cta-band-content">
+        <span class="eyebrow">Ready to plan your stay?</span>
+        <h2>Berlin Woods is your home base for all of it</h2>
+        <p>Less than a mile from downtown Berlin — close enough to explore, quiet enough to recharge.</p>
+        <div class="cta-buttons">
+          <a class="button" href="https://book.amishcountrylodging.com/all-listings?category=16006" target="_blank" rel="noreferrer">Book Your Stay</a>
+          <a class="button-secondary" href="treehouses.html">Browse Stays</a>
+        </div>
       </div>
     </section>
   </main>
