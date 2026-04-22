@@ -66,9 +66,7 @@ function renderUnits(containerId, limit) {
   const container = document.querySelector(containerId);
   if (!container) return;
 
-  const list = containerId === "#featured-units"
-    ? featuredUnitNames.map(name => units.find(u => u.name === name)).filter(Boolean)
-    : (typeof limit === "number" ? units.slice(0, limit) : units);
+  const list = typeof limit === "number" ? units.slice(0, limit) : units;
 
   container.innerHTML = list.map(unit => `
     <article class="unit-card reveal">
