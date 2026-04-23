@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://berlinwoods.com/sitemap.xml
+Sitemap: https://berlinwoodstreehouses.com/sitemap.xml
