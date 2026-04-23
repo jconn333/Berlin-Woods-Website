@@ -56,6 +56,12 @@ function makeFooter() {
           <li><a href="contact.html">Contact</a></li>
           <li><a href="tel:13308932100">(330) 893-2100</a></li>
         </ul>
+        <ul class="footer-links">
+          <li style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);pointer-events:none">Our Properties</li>
+          <li><a href="https://www.amishcountrylodging.com" target="_blank" rel="noopener">Amish Country Lodging</a></li>
+          <li><a href="https://berlinencorehotel.com" target="_blank" rel="noopener">Berlin Encore Hotel</a></li>
+          <li><a href="https://berlinresort.net" target="_blank" rel="noopener">Berlin Resort</a></li>
+        </ul>
         <div class="kicker">Berlin Woods &middot; 5331 County Road 626, Millersburg, OH 44654</div>
       </div>
     </footer>
