@@ -28,7 +28,7 @@ function makeHeader(currentPage) {
         </button>
         <nav id="primary-nav" class="nav-links" aria-label="Primary">
           ${nav}
-          <a class="button" href="https://book.amishcountrylodging.com/all-listings?category=16006" target="_blank" rel="noreferrer">Book Now</a>
+          <a class="button" href="https://reserve.amishcountrylodging.com/all-listings?category=16006" target="_blank" rel="noreferrer">Book Now</a>
         </nav>
       </div>
     </header>
