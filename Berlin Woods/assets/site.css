@@ -896,6 +896,44 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.8rem); margin-bottom: 0.6rem; }
   color: var(--accent-dark);
 }
 
+/* Attraction photos: section banners + photo cards for our own properties */
+.attraction-category__photo {
+  margin: 0 0 1.25rem;
+  aspect-ratio: 3 / 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-strong);
+}
+
+.attraction-category__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.attraction-card__photo {
+  margin: -1.5rem -1.5rem 0.9rem;
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius-md) - 1px) calc(var(--radius-md) - 1px) 0 0;
+  overflow: hidden;
+  background: var(--surface-strong);
+}
+
+.attraction-card__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.attraction-card:hover .attraction-card__photo img { transform: scale(1.03); }
+
+@media (max-width: 720px) {
+  .attraction-category__photo { aspect-ratio: 16 / 9; }
+}
+
 /* ─── CTA BAND ─── */
 .cta-band {
   position: relative;
